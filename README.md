@@ -223,5 +223,204 @@
       background: #fff;
     }
     button[type='submit'] {
-      padding: 15px
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      align-self: center;
+      transition: background-color 0.3s;
+    }
+    button[type='submit']:hover {
+      background-color: #444;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 40px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+      }
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+      .hero-content h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <div class="nav-logo">Freelancer</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content container">
+      <h1>Shibin KS</h1>
+      <h2>Web Developer & UI/UX Designer</h2>
+      <div class="contact-info">
+        <p><a href="mailto:cybernova171717@gmail.com">cybernova171717@gmail.com</a></p>
+        <p>Phone: +91 98765 43210 | Location: Ernakulam, Kerala</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container">
+    <h2 style="text-align:center;">About Me</h2>
+    <p>
+      I’m a passionate MERN Stack Developer with over 3 years of experience designing and developing high-performance web applications.
+      My expertise lies in building responsive front-end interfaces with React, creating robust APIs with Node.js and Express, and managing scalable databases using MongoDB.
+    </p>
+    <p>
+      I enjoy solving complex problems, optimizing performance, and turning ideas into functional digital products.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="container">
+    <h2 style="text-align:center;">My Skills</h2>
+    <div class="skills-bars">
+      <div class="skill">
+        <div class="skill-title">HTML5 & Semantic Markup</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">CSS3 (Flexbox, Grid, Animations)</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">JavaScript & DOM Manipulation</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div>
+      </div>
+      <div class="skill">
+        <div class="skill-title">UI/UX Design (Figma, Prototyping)</div>
+        <div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="container">
+    <h2 style="text-align:center;">Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
+        <div class="timeline-content">
+          <h3>Intern – XYZ Solutions</h3>
+          <span>2024 (3 Months)</span>
+          <p>Worked with the front-end team to develop responsive UI components and implement design changes using HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="fa-solid fa-code"></i></div>
+        <div class="timeline-content">
+          <h3>Freelancer – Web Projects</h3>
+          <span>2023 – Present</span>
+          <p>Developed and deployed websites for local businesses with SEO and mobile optimization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="portfolio" class="container">
+    <h2 style="text-align:center;">Projects</h2>
+    <div class="works-grid">
+      <div class="work-item">
+        <img src="img1.jpg" alt="Startup Website Project" />
+        <div class="work-content">
+          <h3>Startup Website</h3>
+          <p>Landing page for a startup brand with conversion-focused design.</p>
+        </div>
+      </div>
+      <div class="work-item">
+        <img src="img2.jpg" alt="App UI Design Project" />
+        <div class="work-content">
+          <h3>App UI Design</h3>
+          <p>Modern mobile UI designed in Figma and built with HTML/CSS prototype.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="container">
+    <h2 style="text-align:center;">What Clients Say</h2>
+    <div class="testimonials-flex">
+      <div class="testimonial-box">
+        <p>“Shibin delivered our website ahead of schedule and it looks fantastic.”</p>
+        <h4>John Doe – CEO, Startup Inc.</h4>
+      </div>
+      <div class="testimonial-box">
+        <p>“Working with Shibin was smooth: great communication and top-notch results.”</p>
+        <h4>Jane Smith – Marketing Lead, BrandCo</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 style="text-align:center;">Contact Me</h2>
+      <p>Let's build something great together. Drop me a message!</p>
+      <form class="contact-form" action="#" method="POST">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <input type="email" name="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <input type="text" name="subject" placeholder="Subject" required />
+        </div>
+        <div class="form-group">
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
 

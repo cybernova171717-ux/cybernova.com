@@ -1,398 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-<title>Shibin KS – Full Portfolio</title>
-<style>
-/* Reset & base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #723e3e;
-  background: #662121;
-  overflow-x: hidden;
-}
-a {
-  text-decoration: none;
-}
-img {
-  max-width: 100%;
-  display: block;
-}
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding-left: -20%;
-}
-/* Header / Nav */
-header {
-  background: #222;
-  color: #fff;
-  text-align: center;
-}
-#contact p {
-  font-size: 1.1rem;
-  margin-bottom: 30px;
-  color: #555;
-  text-align: center;
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-.form-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.form-group input,
-.form-group textarea {
-  flex: 1 1 100%;
-  padding: 15px;
-  font-size: 1rem;
-  border: 2px solid #000;
-  border-radius: 5px;
-  background: #fff;
-}
-button[type="submit"] {
-  padding: 15px 30px;
-  font-size: 1.1rem;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  align-self: center;
-}
-button[type="submit"]:hover {
-  background-color: #444;
-}
-/* Footer */
-footer {
-  background: #222;
-  color: #ccc;
-  text-align: center;
-  padding: 30px 0;
-  margin-top: 40px;
-}
-footer p {
-  margin: 0;
-}
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 15px;
-  }
-  .skills-flex, .experience-flex, .works-grid, .testimonials-flex {
-    flex-direction: column;
-  }
-  .skill-box, .exp-box, .work-item, .testimonial-box {
-    flex: 1 1 100%;
-  }
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-  .hero-content h2 {
-    font-size: 1.2rem;
-  }
-}
-.skills-bars {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-.skill {
-  width: 100%;
-}
-.skill-title {
-  font-size: 1.1rem;
-  margin-bottom: 8px;
-  color: #333;
-  font-weight: 600;
-}
-.skill-bar {
-  width: 100%;
-  background-color: #e6e6e6;
-  height: 12px;
-  border-radius: 6px;
-  overflow: hidden;
-}
-.skill-fill {
-  height: 100%;
-  background: linear-gradient(to right, #007bff, #00c6ff);
-  border-radius: 6px;
-  transition: width 0.8s ease-in-out;
-}
-.timeline {
-  position: relative;
-  margin-top: 40px;
-  padding-left: 30px;
-  border-left: 3px solid #007bff;
-}
-.timeline-item {
-  position: relative;
-  margin-bottom: 40px;
-}
-.timeline-icon {
-  position: absolute;
-  left: -25px;
-  top: 10px;
-  background-color: #007bff;
-  color: #fff;
-  font-size: 1.2rem;
-  padding: 10px;
-  padding-top: 15px;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  text-align: center;
-  line-height: 15px;
-  padding-bottom: 6px;
-}
-.timeline-content {
-  background: #f9f9f9;
-  padding: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-.timeline-content h3 {
-  margin-bottom: 5px;
-  color: #222;
-}
-.timeline-content span {
-  font-size: 0.9rem;
-  color: #777;
-  display: block;
-  margin-bottom: 10px;
-}
-.timeline-content p {
-  font-size: 1rem;
-  color: #555;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shibin Ks | Cybersecurity & MERN Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-<!-- Header / Navigation -->
-<header>
-<div class="container nav-container">
-<div class="nav-logo">Freelancer</div>
-<nav>
-<ul>
-<li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#experience">Experience</a></li>
-<li><a href="#portfolio">Projects</a></li>
-<li><a href="#testimonials">Testimonials</a></li>
-<li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
-</div>
-</header>
+<body class="bg-gray-900 text-gray-100 font-sans">
 
-<!-- Hero / Intro -->
-<section class="hero">
-<div class="hero-content container">
-<h1>Shibin KS</h1>
-<h2>Web Developer & UI/UX Designer</h2>
-<div class="contact-info">
-<p><a href="mailto:shibinks@gmail.com">shibinks@gmail.com</a></p>
-<p>Phone: | Location: Ernakulam, Kerala</p>
-</div>
-</div>
-</section>
+  <!-- Header -->
+  <header class="text-center py-10 bg-gray-800 shadow-md">
+    <h1 class="text-4xl font-bold text-cyan-400">Shibin Ks</h1>
+    <p class="text-lg text-gray-300">Cybersecurity Enthusiast & MERN Stack Developer</p>
+    <p class="text-sm text-gray-400 mt-2">Building and securing the web | 2025</p>
+  </header>
 
-<!-- About Section -->
-<section id="about" class="container">
-<h2 style="text-align: center;">About Me</h2>
-<p>I’m a passionate MERN Stack Developer with over 3 years of
-experience designing and developing high-performance web applications.
-My expertise lies in building responsive front-end interfaces with
-React, creating robust APIs with Node.js and Express, and managing
-scalable databases using MongoDB.
-I enjoy solving complex problems, optimizing performance, and turning
-ideas into functional digital products. I focus on writing clean,
-maintainable code and continuously learning new technologies to stay
-ahead in the ever-evolving tech landscape.</p>
-<p>I’m a creative web developer and UI/UX designer based in
-Ernakulam, Kerala. I specialize in building engaging, responsive
-websites that offer seamless user experiences across devices.</p>
-<p>With my skills in HTML, CSS, JavaScript and modern frameworks, I
-aim to bridge design and code to bring ideas to life. I believe in
-clean design, performance, and accessibility.</p>
-</section>
+  <!-- About -->
+  <section class="max-w-3xl mx-auto text-center py-10 px-4">
+    <h2 class="text-2xl font-semibold text-cyan-300 mb-4">About Me</h2>
+    <p class="text-gray-300">
+      Hi, I’m <strong>Shibin Ks</strong> — a passionate learner in <strong>Cybersecurity</strong> and <strong>MERN Stack Development</strong>.
+      With 5 months of experience, I focus on creating secure and efficient web applications while exploring ethical hacking and modern web technologies.
+    </p>
+  </section>
 
-<!-- Skills Section -->
-<section id="skills" class="container">
-<h2 style="text-align: center;">My Skills</h2>
-<div class="skills-bars">
-<div class="skill">
-<div class="skill-title">HTML5 & Semantic Markup</div>
-<div class="skill-bar">
-<div class="skill-fill" style="width: 95%"></div>
-</div>
-</div>
-<div class="skill">
-<div class="skill-title">CSS3 (Flexbox, Grid, Animations)</div>
-<div class="skill-bar">
-<div class="skill-fill" style="width: 90%"></div>
-</div>
-</div>
-<div class="skill">
-<div class="skill-title">JavaScript & DOM Manipulation</div>
-<div class="skill-bar">
-<div class="skill-fill" style="width: 85%"></div>
-</div>
-</div>
-<div class="skill">
-<div class="skill-title">UI/UX Design (Figma, Prototyping)</div>
-<div class="skill-bar">
-<div class="skill-fill" style="width: 80%"></div>
-</div>
-</div>
-<div class="skill">
-<div class="skill-title">Responsive Web Design</div>
-<div class="skill-bar">
-<div class="skill-fill" style="width: 90%"></div>
-</div>
-</div>
-</div>
-</section>
+  <!-- Skills -->
+  <section class="bg-gray-800 py-10 px-4">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold text-cyan-300 mb-6 text-center">Skills</h2>
 
-<!-- Experience Section -->
-<section id="experience" class="container">
-<h2 style="text-align: center;">Experience</h2>
-<div class="timeline">
-<div class="timeline-item">
-<div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
-<div class="timeline-content">
-<h3>Intern – XYZ Solutions</h3>
-<span>2024 (3 Months)</span>
-<p>Worked with the front-end team to develop responsive UI components,
-fix layout bugs, and implement design changes using HTML, CSS, and JavaScript.</p>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-icon"><i class="fa-solid fa-code"></i></div>
-<div class="timeline-content">
-<h3>Freelancer – Web Projects</h3>
-<span>2023 – Present</span>
-<p>Developed and deployed websites for local businesses. Focused on SEO, mobile optimization, and
-user-friendly design with HTML5, CSS3, and JS.</p>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-icon"><i class="fa-solid fa-computer"></i></div>
-<div class="timeline-content">
-<h3>College Projects</h3>
-<span>2022 – 2024</span>
-<p>Completed multiple academic projects including e-commerce prototypes, portfolio sites, and
-UI mockups. Worked both solo and in teams using Git.</p>
-</div>
-</div>
-</div>
-</section>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <h3 class="text-xl text-cyan-200 mb-3">🛡️ Cybersecurity</h3>
+          <ul class="list-disc list-inside text-gray-300">
+            <li>Ethical Hacking & Penetration Testing</li>
+            <li>Network Scanning (Nmap, Wireshark)</li>
+            <li>Web Vulnerability Analysis (OWASP Top 10)</li>
+            <li>Linux System Hardening</li>
+            <li>Burp Suite, Metasploit, Hydra</li>
+          </ul>
+        </div>
 
-<!-- Portfolio Section -->
-<section id="portfolio" class="container">
-<h2 style="text-align: center;">Projects</h2>
-<div class="works-grid">
-<div class="work-item">
-<img src="img1.jpg" alt="Startup Website Project">
-<div class="work-content">
-<h3>Startup Website</h3>
-<p>Landing page built for a startup brand with conversion-focused UI and mobile-first design.</p>
-</div>
-</div>
-<div class="work-item">
-<img src="img2.jpg" alt="App UI Design Project">
-<div class="work-content">
-<h3>App UI Design</h3>
-<p>Clean and modern interface for a mobile app, designed in Figma and built in HTML/CSS prototype.</p>
-</div>
-</div>
-<div class="work-item">
-<img src="img3.jpg" alt="Personal Portfolio Website"
-style="width: 340px;border-radius: 10px;height: 260px;">
-<div class="work-content">
-<h3>Personal Portfolio Site</h3>
-<p>My own portfolio website built from scratch using HTML,
-CSS, and responsive design techniques.</p>
-</div>
-</div>
-</div>
-</section>
+        <div>
+          <h3 class="text-xl text-cyan-200 mb-3">💻 MERN Stack</h3>
+          <ul class="list-disc list-inside text-gray-300">
+            <li>Frontend: React.js, HTML5, CSS3, Tailwind</li>
+            <li>Backend: Node.js, Express.js</li>
+            <li>Database: MongoDB, Mongoose</li>
+            <li>Authentication: JWT, bcrypt</li>
+            <li>Version Control: Git & GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- Testimonials Section -->
-<section id="testimonials" class="container">
-<h2 style="text-align: center;">What Clients Say</h2>
-<div class="testimonials-flex">
-<div class="testimonial-box">
-<p>“Shibin delivered our website ahead of schedule and it
-looks fantastic on all devices.”</p>
-<h4>John Doe – CEO, Startup Inc.</h4>
-</div>
-<div class="testimonial-box">
-<p>“Working with Shibin was smooth: great communication and
-top-notch results.”</p>
-<h4>Jane Smith – Marketing Lead, BrandCo</h4>
-</div>
-<div class="testimonial-box">
-<p>“Our web traffic increased after the redesign he
-implemented.”</p>
-<h4>Alex Brown – Founder, WebShop</h4>
-</div>
-</div>
-</section>
+  <!-- Projects -->
+  <section class="max-w-4xl mx-auto py-10 px-4">
+    <h2 class="text-2xl font-semibold text-cyan-300 mb-6 text-center">Projects</h2>
 
-<!-- Contact Section -->
-<section id="contact">
-<div class="container">
-<h2 style="text-align: center;">Contact Me</h2>
-<p>Let's build something great together. Drop me a message and
-I’ll get back to you!</p>
-<form class="contact-form" action="#" method="POST">
-<div class="form-group">
-<input type="text" name="name" placeholder="Your Name" required />
-</div>
-<div class="form-group">
-<input type="email" name="email" placeholder="Your Email" required />
-</div>
-<div class="form-group">
-<input type="text" name="subject" placeholder="Subject" required />
-</div>
-<div class="form-group">
-<textarea name="message" rows="6" placeholder="Your Message" required></textarea>
-</div>
-<button type="submit">Send Message</button>
-</form>
-</div>
-</section>
+    <div class="grid md:grid-cols-2 gap-8">
+      <div class="bg-gray-800 rounded-lg p-5 shadow-md">
+        <h3 class="text-xl font-semibold text-cyan-200 mb-2">SecureAuth Portal</h3>
+        <p class="text-gray-400 text-sm mb-3">
+          MERN-based authentication system with password encryption and brute-force protection.
+        </p>
+        <p class="text-gray-500 text-sm">Tech: MongoDB, Express, React, Node.js, bcrypt</p>
+      </div>
 
-<!-- Footer -->
-<footer>
-<div class="container">
-<p>&copy; 2025. All rights reserved.</p>
-</div>
-</footer>
+      <div class="bg-gray-800 rounded-lg p-5 shadow-md">
+        <h3 class="text-xl font-semibold text-cyan-200 mb-2">VulnScan Web Tool</h3>
+        <p class="text-gray-400 text-sm mb-3">
+          Web app to identify and log common vulnerabilities for testing environments.
+        </p>
+        <p class="text-gray-500 text-sm">Tech: Node.js, Express, Python, Bootstrap</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="bg-gray-800 py-10 text-center">
+    <h2 class="text-2xl font-semibold text-cyan-300 mb-4">📬 Contact Me</h2>
+    <p class="text-gray-300 mb-2">📧 <a href="mailto:shibinks@example.com" class="text-cyan-400">shibinks@example.com</a></p>
+    <p class="text-gray-300">🌐 <a href="https://github.com/shibinks" class="text-cyan-400">github.com/shibinks</a></p>
+  </section>
+
+  <footer class="text-center py-4 text-gray-500 text-sm bg-gray-900 border-t border-gray-800">
+    © 2025 Shibin Ks — Cybersecurity & MERN Developer
+  </footer>
+
 </body>
 </html>

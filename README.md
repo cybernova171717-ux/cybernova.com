@@ -9,7 +9,7 @@ initial‑scale=1.0">
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all
 .min.css">
-<title>Sherona TK – Full Portfolio</title>
+<title>Shibin ks – Full Portfolio</title>
 <style>
 /* Reset & base */
 * {

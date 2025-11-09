@@ -289,10 +289,10 @@
   <section class="hero">
     <div class="hero-content container">
       <h1>Shibin KS</h1>
-      <h2>Web Developer & UI/UX Designer</h2>
+      <h2>Web Developer & Cyber security researcher  </h2>
       <div class="contact-info">
         <p><a href="mailto:cybernova171717@gmail.com">cybernova171717@gmail.com</a></p>
-        <p>Phone: +91 98765 43210 | Location: Ernakulam, Kerala</p>
+        <p>Phone: +91 8138030292  | Location: Ernakulam, Kerala</p>
       </div>
     </div>
   </section>
@@ -301,8 +301,7 @@
   <section id="about" class="container">
     <h2 style="text-align:center;">About Me</h2>
     <p>
-      I’m a passionate MERN Stack Developer with over 3 years of experience designing and developing high-performance web applications.
-      My expertise lies in building responsive front-end interfaces with React, creating robust APIs with Node.js and Express, and managing scalable databases using MongoDB.
+      > I’m an Ethical Hacker and Web Developer passionate about building secure, modern digital solutions. I specialize in penetration testing, vulnerability assessment, and full-stack web development, ensuring every project is protected from the ground up. My mission is to combine creativity with cybersecurity — crafting websites that look great and stay safe.
     </p>
     <p>
       I enjoy solving complex problems, optimizing performance, and turning ideas into functional digital products.
@@ -314,7 +313,7 @@
     <h2 style="text-align:center;">My Skills</h2>
     <div class="skills-bars">
       <div class="skill">
-        <div class="skill-title">HTML5 & Semantic Markup</div>
+        <div class="skill-title">network sacnning (Nmap,wireshark,linux system,burpsuite,metaspoilt,Hydera</div>
         <div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div>
       </div>
       <div class="skill">
@@ -341,7 +340,7 @@
         <div class="timeline-content">
           <h3>Intern – XYZ Solutions</h3>
           <span>2024 (3 Months)</span>
-          <p>Worked with the front-end team to develop responsive UI components and implement design changes using HTML, CSS, and JavaScript.</p>
+          <p>Cybersecurity Researcher with 3 months of practical experience exploring ethical hacking, penetration testing, and web application security. I've worked with tools like Burp Suite, Nmap, Wireshark, and Metasploit to identify and mitigate vulnerabilities. Alongside my interest in cybersecurity, I'm also learning MERN Stack Development to build and secure modern web applications from both the developer and defender perspectives.</p>
         </div>
       </div>
       <div class="timeline-item">

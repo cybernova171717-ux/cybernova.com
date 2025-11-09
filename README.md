@@ -339,7 +339,7 @@
         <div class="timeline-icon"><i class="fa-solid fa-briefcase"></i></div>
         <div class="timeline-content">
           <h3>Intern – XYZ Solutions</h3>
-          <span>2024 (3 Months)</span>
+          <span> (3 Months)</span>
           <p>Cybersecurity Researcher with 3 months of practical experience exploring ethical hacking, penetration testing, and web application security. I've worked with tools like Burp Suite, Nmap, Wireshark, and Metasploit to identify and mitigate vulnerabilities. Alongside my interest in cybersecurity, I'm also learning MERN Stack Development to build and secure modern web applications from both the developer and defender perspectives.</p>
         </div>
       </div>
@@ -347,7 +347,7 @@
         <div class="timeline-icon"><i class="fa-solid fa-code"></i></div>
         <div class="timeline-content">
           <h3>Freelancer – Web Projects</h3>
-          <span>2023 – Present</span>
+          <span>2025 – Present</span>
           <p>Developed and deployed websites for local businesses with SEO and mobile optimization.</p>
         </div>
       </div>
